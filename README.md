@@ -29,28 +29,46 @@ With Context:    Human guides → AI generates → Value delivered
 ## Quick Navigation
 
 ### [Agents](agents/)
+
 AI agent definitions with expertise and behavioral guidelines.
 
+#### Backend
 | Agent | Description | Link |
 |-------|-------------|------|
-| **Backend Engineer** | Senior engineer with Java, Go, Node, Python, Kotlin expertise. Design patterns, SOLID, system design. | [View](agents/backend.md) |
-| **Backend Reviewer** | Code review specialist. PR standards, conventional comments, quality gates. | [View](agents/backend-reviewer.md) |
+| **Backend Engineer** | Java, Go, Node, Python, Kotlin. Design patterns, SOLID, system design. | [View](agents/backend.md) |
+| **Backend Reviewer** | PR standards, Conventional Comments, CI/CD quality gates. | [View](agents/backend-reviewer.md) |
+
+#### Frontend
+| Agent | Description | Link |
+|-------|-------------|------|
+| **Frontend Engineer** | React, Vue.js, TypeScript, Next.js, Nuxt. State management, a11y. | [View](agents/frontend.md) |
+| **Frontend Reviewer** | Accessibility, Core Web Vitals, UX, security (XSS). | [View](agents/frontend-reviewer.md) |
+
+#### Mobile
+| Agent | Description | Link |
+|-------|-------------|------|
+| **Mobile Engineer** | Flutter, Android (Kotlin), iOS (Swift). MVVM, Clean Architecture. | [View](agents/mobile.md) |
+| **Mobile Reviewer** | Platform guidelines, performance, accessibility. | [View](agents/mobile-reviewer.md) |
 
 ### [Knowledge Base](agents/knowledge/)
+
 Reference materials for engineering best practices.
 
 | Topic | Description | Link |
 |-------|-------------|------|
-| **Design Patterns** | All 23 GoF patterns + modern patterns (CQRS, Saga, Event Sourcing) | [View](agents/knowledge/design-patterns.md) |
+| **Design Patterns** | GoF 23 + modern patterns (CQRS, Saga, Event Sourcing) | [View](agents/knowledge/design-patterns.md) |
 | **Engineering Principles** | SOLID, KISS, DRY, YAGNI, GRASP, Clean Architecture | [View](agents/knowledge/engineering-principles.md) |
 | **System Design** | Big O, architectures, distributed systems, CAP theorem | [View](agents/knowledge/system-design.md) |
 | **Testing Strategies** | Unit, mutation, integration testing by language | [View](agents/knowledge/testing-strategies.md) |
-| **Code Review Guidelines** | Conventional Comments, checklists, feedback techniques | [View](agents/knowledge/code-review-guidelines.md) |
-| **PR Templates** | Standard, bug fix, feature, refactor, hotfix templates | [View](agents/knowledge/pr-templates.md) |
-| **Labels Conventions** | GitHub label taxonomy with colors and automation | [View](agents/knowledge/labels-conventions.md) |
+| **Frontend Development** | React/Vue patterns, state management, performance | [View](agents/knowledge/frontend-development.md) |
+| **Mobile Development** | Flutter/Android/iOS patterns, MVVM, MVI | [View](agents/knowledge/mobile-development.md) |
+| **Code Review Guidelines** | Conventional Comments, checklists, feedback | [View](agents/knowledge/code-review-guidelines.md) |
+| **PR Templates** | Standard, bug fix, feature, refactor, hotfix | [View](agents/knowledge/pr-templates.md) |
+| **Labels Conventions** | GitHub label taxonomy with colors | [View](agents/knowledge/labels-conventions.md) |
 | **CI/CD Quality Gates** | Pipeline checks, branch protection, SonarQube | [View](agents/knowledge/cicd-quality-gates.md) |
 
 ### [Resources](resources/)
+
 Curated learning materials for AI-assisted development.
 
 | Category | Description | Link |
@@ -72,14 +90,27 @@ eng-delivery-playbook/
 │
 ├── agents/                      # AI Agent Definitions
 │   ├── README.md                # Agents overview
-│   ├── backend.md               # Backend Engineer Agent
-│   ├── backend-reviewer.md      # Code Review Agent
+│   │
+│   │   # Backend
+│   ├── backend.md               # Backend Engineer
+│   ├── backend-reviewer.md      # Backend Reviewer
+│   │
+│   │   # Frontend
+│   ├── frontend.md              # Frontend Engineer
+│   ├── frontend-reviewer.md     # Frontend Reviewer
+│   │
+│   │   # Mobile
+│   ├── mobile.md                # Mobile Engineer
+│   ├── mobile-reviewer.md       # Mobile Reviewer
+│   │
 │   └── knowledge/               # Reference Materials
 │       ├── index.md
 │       ├── design-patterns.md
 │       ├── engineering-principles.md
 │       ├── system-design.md
 │       ├── testing-strategies.md
+│       ├── frontend-development.md
+│       ├── mobile-development.md
 │       ├── code-review-guidelines.md
 │       ├── pr-templates.md
 │       ├── labels-conventions.md
@@ -99,6 +130,8 @@ eng-delivery-playbook/
 | Code Coverage | >= 80% (new code) |
 | Review Response | < 4 hours |
 | Security Scan | No critical/high vulnerabilities |
+| Accessibility | WCAG AA compliance |
+| Performance | Core Web Vitals green |
 
 ---
 
@@ -122,8 +155,8 @@ Assess your AI readiness:
 
 ### For AI Systems
 ```
-You are a Senior Backend Engineer.
-Follow the guidelines in agents/backend.md.
+You are a Senior [Backend/Frontend/Mobile] Engineer.
+Follow the guidelines in agents/[specialty].md.
 ```
 
 ### For Teams

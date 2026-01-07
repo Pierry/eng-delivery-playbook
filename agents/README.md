@@ -1,89 +1,105 @@
 # AI Agents
 
-This folder contains AI agent definitions that establish personas, expertise, and behavioral guidelines for AI-assisted development.
+This folder contains AI agent definitions that establish personas, expertise, and behavioral guidelines for AI-assisted development across different specializations.
 
 ---
 
 ## Available Agents
 
-### Backend Engineer (`backend.md`)
+### Backend
 
-A senior backend engineer persona with 10+ years equivalent expertise.
+| Agent | Role | Technologies | Link |
+|-------|------|--------------|------|
+| **Backend Engineer** | Senior Engineer | Java, Go, Node.js, TypeScript, Kotlin, Python | [View](backend.md) |
+| **Backend Reviewer** | Code Reviewer | PR standards, CI/CD, Conventional Comments | [View](backend-reviewer.md) |
 
-**Core Competencies:**
+**Backend Engineer** - Expert in:
+- Languages: Java, Go, Node.js, TypeScript, Kotlin, Python
+- Patterns: GoF 23, CQRS, Event Sourcing, Saga
+- Principles: SOLID, KISS, DRY, Clean Architecture
+- Testing: Unit, Integration, Mutation, Contract
 
-| Area | Technologies & Concepts |
-|------|------------------------|
-| **Languages** | Java, Go, Node.js, TypeScript, JavaScript, Kotlin, Python |
-| **Frameworks** | Spring Boot, Micronaut, Quarkus, Express, Fastify, NestJS, FastAPI, Django |
-| **Patterns** | All 23 GoF patterns + Repository, CQRS, Event Sourcing, Saga |
-| **Principles** | SOLID, KISS, DRY, YAGNI, GRASP, Clean Architecture |
-| **System Design** | Microservices, Event-Driven, Serverless, Distributed Systems |
-| **Databases** | SQL, NoSQL, Caching strategies, Sharding, Replication |
-| **Testing** | Unit, Integration, Mutation, Contract, Performance |
-
-**Use Cases:**
-- Implementing new features following best practices
-- Refactoring legacy code with proper patterns
-- Designing system architecture
-- Writing comprehensive tests
-- Code review with deep technical insights
-
-**[View Full Agent Definition →](backend.md)**
+**Backend Reviewer** - Enforces:
+- Conventional Comments (blocker, issue, suggestion, nit)
+- PR size limits (< 400 lines)
+- CI/CD quality gates
+- Security and performance standards
 
 ---
 
-### Backend Reviewer (`backend-reviewer.md`)
+### Frontend
 
-A code review specialist focused on quality standards and review conventions.
+| Agent | Role | Technologies | Link |
+|-------|------|--------------|------|
+| **Frontend Engineer** | Senior Engineer | React, Vue.js, TypeScript, Next.js, Nuxt | [View](frontend.md) |
+| **Frontend Reviewer** | Code Reviewer | A11y, Performance, UX, Core Web Vitals | [View](frontend-reviewer.md) |
 
-**Core Competencies:**
+**Frontend Engineer** - Expert in:
+- Frameworks: React, Vue.js, Next.js, Nuxt
+- State: Zustand, Pinia, TanStack Query, Redux Toolkit
+- Styling: Tailwind CSS, CSS Modules, styled-components
+- Testing: Jest, Vitest, Playwright, Testing Library
 
-| Area | Coverage |
-|------|----------|
-| **Comment Conventions** | Conventional Comments (blocker, issue, suggestion, nit, praise) |
-| **PR Standards** | Templates, size limits (< 400 lines), required sections |
-| **Labels** | Type, Priority, Size, Status, Review categories with colors |
-| **CI/CD Gates** | Build, Test, Security, Coverage thresholds |
-| **Checklists** | Security, Performance, Architecture, Testing, Maintainability |
+**Frontend Reviewer** - Enforces:
+- Accessibility (WCAG AA compliance)
+- Core Web Vitals (LCP, INP, CLS)
+- TypeScript strict mode
+- Security (XSS prevention)
 
-**Review Priority Order:**
-```
-1. Security vulnerabilities     [BLOCKER]
-2. Correctness / bugs          [BLOCKER]
-3. Architecture / design       [BLOCKER]
-4. Performance problems        [ISSUE]
-5. Test coverage gaps          [ISSUE]
-6. Code clarity               [SUGGESTION]
-7. Style / conventions        [NIT]
-```
+---
 
-**Use Cases:**
-- Reviewing pull requests with consistent standards
-- Enforcing quality gates before merge
-- Providing constructive feedback
-- Maintaining code quality across teams
+### Mobile
 
-**[View Full Agent Definition →](backend-reviewer.md)**
+| Agent | Role | Technologies | Link |
+|-------|------|--------------|------|
+| **Mobile Engineer** | Senior Engineer | Flutter, Android (Kotlin), iOS (Swift) | [View](mobile.md) |
+| **Mobile Reviewer** | Code Reviewer | Performance, UX, Platform guidelines | [View](mobile-reviewer.md) |
+
+**Mobile Engineer** - Expert in:
+- Cross-platform: Flutter/Dart, Riverpod, Bloc
+- Android: Kotlin, Jetpack Compose, Coroutines, Hilt
+- iOS: Swift, SwiftUI, Combine, async/await
+- Patterns: MVVM, MVI, Clean Architecture
+
+**Mobile Reviewer** - Enforces:
+- Platform guidelines (Material 3, HIG)
+- Performance (60fps, no ANR, memory leaks)
+- Accessibility (touch targets, screen readers)
+- Testing (device coverage, golden tests)
 
 ---
 
 ## Knowledge Base
 
-The `knowledge/` subfolder contains detailed reference materials used by the agents:
+The `knowledge/` subfolder contains detailed reference materials:
 
+### Backend Knowledge
 | File | Description |
 |------|-------------|
-| [design-patterns.md](knowledge/design-patterns.md) | All 23 GoF patterns with code examples in multiple languages |
-| [engineering-principles.md](knowledge/engineering-principles.md) | SOLID, KISS, DRY, YAGNI, GRASP with practical examples |
-| [system-design.md](knowledge/system-design.md) | Big O, architecture patterns, distributed systems |
-| [testing-strategies.md](knowledge/testing-strategies.md) | Unit, mutation, integration testing by language |
-| [code-review-guidelines.md](knowledge/code-review-guidelines.md) | Conventional Comments, review process, feedback techniques |
-| [pr-templates.md](knowledge/pr-templates.md) | Standard and specialized PR templates |
-| [labels-conventions.md](knowledge/labels-conventions.md) | GitHub label taxonomy with colors and automation |
-| [cicd-quality-gates.md](knowledge/cicd-quality-gates.md) | Pipeline checks, branch protection, SonarQube |
+| [design-patterns.md](knowledge/design-patterns.md) | GoF 23 patterns + modern patterns |
+| [engineering-principles.md](knowledge/engineering-principles.md) | SOLID, KISS, DRY, GRASP |
+| [system-design.md](knowledge/system-design.md) | Big O, architecture, distributed systems |
+| [testing-strategies.md](knowledge/testing-strategies.md) | Unit, mutation, integration testing |
 
-**[View Knowledge Base Index →](knowledge/index.md)**
+### Frontend Knowledge
+| File | Description |
+|------|-------------|
+| [frontend-development.md](knowledge/frontend-development.md) | React/Vue patterns, state, performance |
+
+### Mobile Knowledge
+| File | Description |
+|------|-------------|
+| [mobile-development.md](knowledge/mobile-development.md) | Flutter/Android/iOS patterns |
+
+### Review & Quality
+| File | Description |
+|------|-------------|
+| [code-review-guidelines.md](knowledge/code-review-guidelines.md) | Conventional Comments, review process |
+| [pr-templates.md](knowledge/pr-templates.md) | PR templates for various change types |
+| [labels-conventions.md](knowledge/labels-conventions.md) | GitHub labels taxonomy |
+| [cicd-quality-gates.md](knowledge/cicd-quality-gates.md) | Pipeline checks, branch protection |
+
+**[View Full Knowledge Base Index →](knowledge/index.md)**
 
 ---
 
@@ -91,9 +107,9 @@ The `knowledge/` subfolder contains detailed reference materials used by the age
 
 ### For AI Systems
 ```
-You are a Senior Backend Engineer.
-Follow the guidelines and expertise defined in agents/backend.md.
-Reference the knowledge base for specific patterns and principles.
+You are a Senior [Backend/Frontend/Mobile] Engineer.
+Follow the guidelines in agents/[role].md.
+Reference the knowledge base for specific patterns.
 ```
 
 ### For Development Teams
@@ -109,16 +125,26 @@ Reference the knowledge base for specific patterns and principles.
 
 ---
 
+## Agent Summary
+
+| Specialization | Engineer | Reviewer |
+|----------------|----------|----------|
+| **Backend** | [backend.md](backend.md) | [backend-reviewer.md](backend-reviewer.md) |
+| **Frontend** | [frontend.md](frontend.md) | [frontend-reviewer.md](frontend-reviewer.md) |
+| **Mobile** | [mobile.md](mobile.md) | [mobile-reviewer.md](mobile-reviewer.md) |
+
+---
+
 ## Adding New Agents
 
 To add a new agent:
 
 1. Create `<agent-name>.md` in this folder
 2. Define: Identity, Expertise, Behavioral Guidelines
-3. Reference relevant knowledge base files
+3. Create corresponding knowledge base file if needed
 4. Update this README with the new agent
 5. Update the main project README
 
 ---
 
-*Agents are designed to provide consistent, high-quality AI assistance across engineering teams.*
+*Agents provide consistent, high-quality AI assistance across engineering teams.*
