@@ -69,6 +69,44 @@ This folder contains AI agent definitions that establish personas, expertise, an
 
 ---
 
+### DevOps
+
+| Agent | Role | Technologies | Link |
+|-------|------|--------------|------|
+| **DevOps Engineer** | Senior Engineer | Kubernetes, Terraform, Docker, CI/CD | [View](devops.md) |
+| **DevOps Reviewer** | Code Reviewer | Security, Reliability, IaC standards | [View](devops-reviewer.md) |
+
+**DevOps Engineer** - Expert in:
+- Cloud: AWS, GCP, Azure, multi-cloud strategies
+- Containers: Kubernetes, Docker, Helm, Service Mesh
+- IaC: Terraform, Pulumi, CloudFormation, Ansible
+- CI/CD: GitHub Actions, GitLab CI, ArgoCD, Tekton
+
+**DevOps Reviewer** - Enforces:
+- Security (secrets management, least privilege)
+- Reliability (resource limits, probes, PDBs)
+- IaC best practices (modules, state management)
+- Pipeline quality gates
+
+---
+
+### Consultants
+
+| Agent | Role | Focus | Link |
+|-------|------|-------|------|
+| **Tech Consultant** | Advisor | All technologies, strategic decisions | [View](consultant.md) |
+
+**Tech Consultant** - Provides:
+- Strategic guidance without writing code
+- Probing questions and assumption challenging
+- Trade-off analysis and decision frameworks
+- Industry best practices across all domains
+- Risk assessment and mitigation strategies
+
+> **Note**: Consultant agents are advisors only. They help teams think through problems and make informed decisions but do not implement solutions.
+
+---
+
 ## Knowledge Base
 
 The `knowledge/` subfolder contains detailed reference materials:
@@ -90,6 +128,11 @@ The `knowledge/` subfolder contains detailed reference materials:
 | File | Description |
 |------|-------------|
 | [mobile-development.md](knowledge/mobile-development.md) | Flutter/Android/iOS patterns |
+
+### DevOps Knowledge
+| File | Description |
+|------|-------------|
+| [devops-practices.md](knowledge/devops-practices.md) | CI/CD, Kubernetes, Terraform, observability |
 
 ### Review & Quality
 | File | Description |
@@ -132,6 +175,11 @@ Reference the knowledge base for specific patterns.
 | **Backend** | [backend.md](backend.md) | [backend-reviewer.md](backend-reviewer.md) |
 | **Frontend** | [frontend.md](frontend.md) | [frontend-reviewer.md](frontend-reviewer.md) |
 | **Mobile** | [mobile.md](mobile.md) | [mobile-reviewer.md](mobile-reviewer.md) |
+| **DevOps** | [devops.md](devops.md) | [devops-reviewer.md](devops-reviewer.md) |
+
+| Consultant | Focus | Link |
+|------------|-------|------|
+| **Tech Consultant** | All technologies | [consultant.md](consultant.md) |
 
 ---
 

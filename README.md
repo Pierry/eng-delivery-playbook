@@ -18,6 +18,9 @@ A comprehensive collection of AI-powered engineering agents and knowledge bases 
 | **Frontend Reviewer** | Code review specialist enforcing accessibility standards, Core Web Vitals (LCP, INP, CLS), TypeScript strict mode, XSS prevention, and UX best practices. | [View](agents/frontend-reviewer.md) |
 | **Mobile Engineer** | Senior engineer expert in Flutter/Dart, Android (Kotlin/Compose), iOS (Swift/SwiftUI). Covers MVVM, MVI, Clean Architecture, and platform-specific patterns. | [View](agents/mobile.md) |
 | **Mobile Reviewer** | Code review specialist enforcing platform guidelines (Material 3, HIG), performance (60fps, no ANR), memory management, and mobile accessibility. | [View](agents/mobile-reviewer.md) |
+| **DevOps Engineer** | Senior engineer expert in Kubernetes, Docker, Terraform, AWS/GCP/Azure. Covers GitOps, CI/CD pipelines, observability, and infrastructure automation. | [View](agents/devops.md) |
+| **DevOps Reviewer** | Infrastructure review specialist enforcing security, reliability, IaC best practices, secrets management, and pipeline quality gates. | [View](agents/devops-reviewer.md) |
+| **Tech Consultant** | Advisory agent (no coding). Provides strategic guidance, asks probing questions, challenges assumptions, presents trade-offs, and helps teams make informed technical decisions. | [View](agents/consultant.md) |
 
 ### Knowledge Base
 
@@ -29,6 +32,7 @@ A comprehensive collection of AI-powered engineering agents and knowledge bases 
 | **Testing Strategies** | Testing pyramid and philosophy. Unit, mutation, integration testing. Frameworks by language (JUnit, pytest, Jest, Vitest). Test Containers, Pact, k6. | [View](agents/knowledge/testing-strategies.md) |
 | **Frontend Development** | React/Vue component patterns (Compound, Render Props, Hooks). State management (Zustand, Pinia, TanStack Query). Performance, accessibility, security patterns. | [View](agents/knowledge/frontend-development.md) |
 | **Mobile Development** | Flutter/Android/iOS architecture patterns. MVVM, MVI, Clean Architecture by platform. State management, performance optimization, platform-specific testing. | [View](agents/knowledge/mobile-development.md) |
+| **DevOps Practices** | CI/CD patterns, deployment strategies (Blue-Green, Canary). Kubernetes, Terraform, Docker best practices. Observability, SRE, security, and cost optimization. | [View](agents/knowledge/devops-practices.md) |
 | **Code Review Guidelines** | Conventional Comments system with prefixes. Review checklists for correctness, security, performance. Feedback techniques and response templates. | [View](agents/knowledge/code-review-guidelines.md) |
 | **PR Templates** | Standard PR template with all sections. Specialized templates: Bug Fix, Feature, Refactor, Database Migration, Hotfix, Dependency Update. | [View](agents/knowledge/pr-templates.md) |
 | **Labels Conventions** | Complete GitHub label taxonomy. Categories: Type, Priority, Size, Status, Review. Color codes and automation setup with GitHub Actions. | [View](agents/knowledge/labels-conventions.md) |
@@ -90,6 +94,13 @@ eng-delivery-playbook/
 │   ├── mobile.md                # Mobile Engineer
 │   ├── mobile-reviewer.md       # Mobile Reviewer
 │   │
+│   │   # DevOps
+│   ├── devops.md                # DevOps Engineer
+│   ├── devops-reviewer.md       # DevOps Reviewer
+│   │
+│   │   # Consultants
+│   ├── consultant.md            # Tech Consultant (advisory only)
+│   │
 │   └── knowledge/               # Reference Materials
 │       ├── index.md
 │       ├── design-patterns.md
@@ -98,6 +109,7 @@ eng-delivery-playbook/
 │       ├── testing-strategies.md
 │       ├── frontend-development.md
 │       ├── mobile-development.md
+│       ├── devops-practices.md
 │       ├── code-review-guidelines.md
 │       ├── pr-templates.md
 │       ├── labels-conventions.md
@@ -142,7 +154,7 @@ Assess your AI readiness:
 
 ### For AI Systems
 ```
-You are a Senior [Backend/Frontend/Mobile] Engineer.
+You are a Senior [Backend/Frontend/Mobile/DevOps] Engineer.
 Follow the guidelines in agents/[specialty].md.
 ```
 

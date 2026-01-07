@@ -15,6 +15,9 @@ agents/
 ├── frontend-reviewer.md            # Frontend Reviewer
 ├── mobile.md                       # Mobile Engineer
 ├── mobile-reviewer.md              # Mobile Reviewer
+├── devops.md                       # DevOps Engineer
+├── devops-reviewer.md              # DevOps Reviewer
+├── consultant.md                   # Tech Consultant (advisory)
 │
 └── knowledge/
     ├── index.md                    # This file
@@ -30,6 +33,9 @@ agents/
     │
     │   # Mobile
     ├── mobile-development.md       # Flutter/Android/iOS patterns
+    │
+    │   # DevOps
+    ├── devops-practices.md         # CI/CD, K8s, Terraform, SRE
     │
     │   # Code Review & Quality
     ├── code-review-guidelines.md   # Review process & feedback
@@ -81,6 +87,24 @@ agents/
 
 ---
 
+## DevOps Knowledge
+
+| File | Description |
+|------|-------------|
+| [devops-practices.md](devops-practices.md) | CI/CD, Kubernetes, Terraform, observability, SRE practices |
+
+**Covers:**
+- DevOps principles (CALMS, Three Ways)
+- CI/CD patterns (Blue-Green, Canary, GitOps)
+- Infrastructure as Code (Terraform, Pulumi)
+- Container orchestration (Kubernetes, Docker)
+- Observability (Golden Signals, RED/USE methods)
+- Security practices (secrets, container security)
+- Reliability engineering (SLO/SLI, incident response)
+- Cost optimization (FinOps)
+
+---
+
 ## Code Review & Quality
 
 | File | Description |
@@ -109,6 +133,16 @@ agents/
 1. Reference `mobile.md` for identity and behavior
 2. Use `mobile-development.md` for platform-specific patterns
 3. Use `testing-strategies.md` for general testing concepts
+
+### For DevOps Development
+1. Reference `devops.md` for identity and behavior
+2. Use `devops-practices.md` for infrastructure patterns
+3. Use `cicd-quality-gates.md` for pipeline requirements
+
+### For Technical Consulting
+1. Reference `consultant.md` for advisory approach
+2. Use all knowledge bases for cross-domain expertise
+3. Apply Socratic method and decision frameworks
 
 ### For Code Reviews
 1. Reference `*-reviewer.md` files for review standards
